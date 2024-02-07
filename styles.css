@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    box-sizing: border-box;
+    
+}
+body{
+background-color: black;
+}
+
+.top{
+  text-align: center;
+  background-color: rgb(107, 11, 107);
+    width: 250px;
+   font-size: 10px;
+   margin: auto;
+   padding: 8px 32px 10px 32px;
+   border-bottom-left-radius: 8px;
+   border-bottom-right-radius: 8px;
+     } 
+     .top strong{
+     font-size: 16px;
+     }
+
+.plan{
+      width: 300px;
+      margin: auto;
+      text-align: center;
+      padding-top: 100px;
+  }
+
+  i{
+    font-size: 20px
+  }
+.row{
+    margin-top: 5px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+
+.course-col{
+  flex: 1;
+    border-radius: 5px;
+    padding: 12px 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+    transition: 0.5s;
+    background-color: #1b1b1b;
+    font-size: 11px;
+}
+ .course-col h1,h2,p{
+  text-align: center;
+}
+ .course-col ul {
+  padding: 16px;
+  list-style-type: disc;
+}
+ .course-col li::marker{
+color: rgb(187, 50, 205);
+}
+ .course-col :hover{
+    box-shadow: 0 0 20px 0px rgba(51, 39, 39, 0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+    .body{
+      flex-shrink: inherit;
+    }
+
+}
+
+
+
+
+  .dropbtn {
+  background-color: transparent;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid white;
+    width: 100%;
+    cursor: pointer;
+    position: relative; /* Position relative for arrow positioning */
+  }
+ 
+  /* Style the arrow */
+  .arrow {
+    position: absolute;
+    right: 10px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Style the dropdown content */
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgb(107, 11, 107);
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(63, 39, 39, 0.2);
+    z-index: 1;
+  }
+  
+  /* Style links inside the dropdown */
+  .dropdown-content li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content li:hover {
+    background-color: purple;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #992389; /* Lighter pink */
+  }
+
+  .dropdown p{
+    color: purple;
+  }
+
+
+
+
+
+
+
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 20px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    width:150px;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #a50f91;
+    transition: 1s;
+}
+.toggle-button {
+  padding: 10px 20px;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-button.on {
+  background-color: #27ae60; /* Green color when on */
+  color: #fff;
+}
+
+
+.toggle-button.off {
+  background-color: #e74c3c; /* Red color when off */
+  color: #fff;
+}
